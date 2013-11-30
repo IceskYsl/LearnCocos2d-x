@@ -33,11 +33,25 @@ int PeopleInit(int age,char* name, People * p){
     return 0;
 }
 
+typedef struct {
+    int num;
+} A;
+
+typedef struct {
+    int num;
+} B;
+
 
 int main(int argc, const char * argv[])
 {
 
     // insert code here...
+    A * a = malloc(sizeof(A));
+    a -> num = 20;
+    B * b = (B*)a;
+    b -> num = 10;
+    
+    printf("%d\n",a->num);
     
 //    People p;
 //    p.age = 20;
