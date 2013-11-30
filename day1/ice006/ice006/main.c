@@ -61,7 +61,6 @@ int main(int argc, const char * argv[])
     
     printf("%d\n",p->age);
     printf("%s\n",p->name);
-//    printf("%d\n",p1->age);
     
     PeopleDelete(p);
 
