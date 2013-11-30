@@ -15,10 +15,14 @@ int main(int argc, const char * argv[])
     
     FILE * f = fopen("/source/LearnCocos2d-x/day1/datas/datas.txt", "w");
     
-    for (int i = 0; i <= 100; i++){
-        fprintf(f, "line %d\n",i);
-    }
+    if (f!=NULL){
+        for (int i = 0; i <= 100; i++){
+            fprintf(f, "line %d\n",i);
+        }
     fclose(f);
+    }
+
+
     
     puts("this is a string");
     
