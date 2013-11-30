@@ -7,8 +7,16 @@
 //
 
 #include <stdio.h>
+#include "myfile.h"
+
+void sayHi(){
+    printf("hey ice from sayHi@myfile\n");
+}
 
 int max(int a,int b){
+    sayHi();
     printf("max~~\n");
     return a > b ? a :b ;
 }
+
+
