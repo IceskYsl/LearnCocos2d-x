@@ -81,7 +81,13 @@ int main(int argc, const char * argv[])
 //    
 //    PeopleDelete(p);
     
+    A * a = malloc(sizeof(a));
+    a -> num = 18;
+    int64_t pointer = (int64_t)a;
     
+    A * a1 = (A*) pointer;
+    
+    printf("%d\n",a1 -> num);
 
     return 0;
 }
