@@ -81,7 +81,7 @@ int main(int argc, const char * argv[])
 //    
 //    PeopleDelete(p);
     
-    A * a = malloc(sizeof(a));
+    A * a = malloc(sizeof(a)); //void * 无类型指针
     a -> num = 18;
     int64_t pointer = (int64_t)a;
     
