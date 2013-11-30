@@ -35,10 +35,13 @@ int PeopleInit(int age,char* name, People * p){
 
 typedef struct {
     int num;
+    char * str;
 } A;
 
 typedef struct {
     int num;
+    char * str;
+    char * name;
 } B;
 
 
@@ -46,12 +49,12 @@ int main(int argc, const char * argv[])
 {
 
     // insert code here...
-    A * a = malloc(sizeof(A));
-    a -> num = 20;
-    B * b = (B*)a;
-    b -> num = 10;
-    
-    printf("%d\n",a->num);
+//    A * a = malloc(sizeof(A));
+//    a -> num = 20;
+//    B * b = (B*)a;
+//    b -> num = 10;
+//    
+//    printf("%d\n",a->num);
     
 //    People p;
 //    p.age = 20;
@@ -77,6 +80,8 @@ int main(int argc, const char * argv[])
 //    printf("%s\n",p->name);
 //    
 //    PeopleDelete(p);
+    
+    
 
     return 0;
 }
