@@ -54,15 +54,15 @@ int main(int argc, const char * argv[])
 //    free(p);
 //    p = CreatePeople(18, "ice");
     
-    People *p;
-    PeopleAlloc(&p);
-    PeopleInit(19, "iceskysl", p);
-    
-    
-    printf("%d\n",p->age);
-    printf("%s\n",p->name);
-    
-    PeopleDelete(p);
+//    People *p;
+//    PeopleAlloc(&p);
+//    PeopleInit(19, "iceskysl", p);
+//    
+//    
+//    printf("%d\n",p->age);
+//    printf("%s\n",p->name);
+//    
+//    PeopleDelete(p);
 
     return 0;
 }
